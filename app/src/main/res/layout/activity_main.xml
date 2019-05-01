@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/putihGelap1"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNama"
+        android:hint="Search"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:layout_toLeftOf="@+id/btn_search"
+        />
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_search"
+        android:layout_alignParentRight="true"
+        android:text="Cari"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNama"
+        android:id="@+id/rcListFilm"
+        ></android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNama"
+        android:id="@+id/rcSearchFilm"
+        android:visibility="gone"
+        ></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
